@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "tailer": "npx tailwindcss -i style.css/style.css -o output.css -w",
+    "sasser": "node-sass -i style.scss  -o  style.css -w"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  }
+}

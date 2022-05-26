@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.colored-container {
+  @apply justify-between w-9/12 flex bg-blue-300; }
+
+.colorless-container {
+  @apply justify-between w-9/12 flex; }
+
+.flex-100 {
+  flex: 1 0 0; }
+
+#middle-bar {
+  align-items: start; }
+
+.header-txts {
+  @apply mt-28 flex flex-col items-center; }
+  .header-txts > h1 {
+    @apply font-semibold text-5xl text-center; }
+  .header-txts > p {
+    @apply my-8 text-center w-3/5 text-lg text-gray-400; }
+
+#touch {
+  background-image: url("imgs/formBG.jpg"); }
+
+.forms-wrap {
+  grid-template-columns: repeat(2, 1fr); }
+  .forms-wrap input {
+    @apply text-white placeholder-opacity-100 placeholder-white border-b border-white bg-transparent pl-4 pb-6; }
+  .forms-wrap > label {
+    display: none; }
+  .forms-wrap #more {
+    @apply text-white placeholder-opacity-100 placeholder-white border-b border-white bg-transparent pl-4 pb-6;
+    grid-column: 1/-1; }
+
+#footer {
+  background-color: #201b25; }
+  #footer > .flex > .grid {
+    @apply text-gray-400;
+    grid-template-columns: 30% 1fr 1fr 15%; }
+    #footer > .flex > .grid h3 {
+      @apply text-2xl text-white mb-6; }
+    #footer > .flex > .grid span {
+      @apply block mb-6; }
+  #footer a {
+    @apply block mb-6; }
+  #footer input {
+    @apply text-gray-400   bg-transparent; }

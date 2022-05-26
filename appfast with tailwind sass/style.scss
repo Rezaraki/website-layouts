@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.colored-container {
+  @apply justify-between w-9/12 flex bg-blue-300;
+}
+.colorless-container {
+  @apply justify-between w-9/12 flex;
+}
+.flex-100 {
+  flex: 1 0 0;
+}
+#middle-bar {
+  align-items: start;
+  .second-col {
+    //  &:after {
+    //     content: "";
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 20%;
+    //     left: 0;
+    //     bottom: -2.5rem;
+    //     background-color: #ad1457;
+
+    //     // background-color: azure;
+    //   }
+  }
+}
+.header-txts {
+  & > h1 {
+    @apply font-semibold text-5xl text-center;
+  }
+  & > p {
+    @apply my-8 text-center w-3/5 text-lg text-gray-400;
+  }
+  @apply mt-28 flex flex-col items-center;
+}
+#touch {
+  background-image: url("imgs/formBG.jpg");
+}
+.forms-wrap {
+  // background-color: antiquewhite;
+  grid-template-columns: repeat(2, 1fr);
+
+  input {
+    @apply text-white placeholder-opacity-100 placeholder-white border-b border-white bg-transparent pl-4 pb-6;
+  }
+  & > label {
+    display: none;
+  }
+  #more {
+    @apply text-white placeholder-opacity-100 placeholder-white border-b border-white bg-transparent pl-4 pb-6;
+    grid-column: 1/-1;
+    // width: 2%;
+  }
+}
+
+#footer {
+  background-color: #201b25;
+  & > .flex > .grid {
+    @apply text-gray-400;
+    grid-template-columns: 30% 1fr 1fr 15%;
+    h3 {
+      @apply text-2xl text-white mb-6;
+    }
+    span {
+      @apply block mb-6;
+    }
+  }
+  a {
+    @apply block mb-6;
+  }
+  input {
+    @apply text-gray-400   bg-transparent;
+  }
+}
+// .header-txts > h1 {
+//   @apply font-semibold text-5xl text-center;
+// }
+// .header-txts > p {
+//   @apply my-8 text-center w-3/5 text-lg text-gray-400;
+// }
