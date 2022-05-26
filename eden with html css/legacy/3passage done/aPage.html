@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>a simple page layout</title>
+    <link rel="stylesheet" href="aPage.css" />
+  </head>
+  <body>
+    <div class="section" id="header">
+      <div class="header container flex">
+        <div class="socials">
+          <a href="www.facebook.com"
+            ><img src="./social icons/facebook_icon.png" alt="facebook"
+          /></a>
+          <a href="twitter__icon"
+            ><img src="./social icons/twitter__icon.png" alt="twitter"
+          /></a>
+          <a href="www.facebook.com"
+            ><img src="./social icons/instagram__icon.png" alt="insta"
+          /></a>
+          <a href="www.facebook.com"
+            ><img src="./social icons/skype_icon.png" alt="skype"
+          /></a>
+          <a href="www.facebook.com"
+            ><img src="./social icons/vimeo_icon.png" alt="vimeo"
+          /></a>
+        </div>
+        <div class="logo-container">
+          <!-- eden. -->
+          <div class="logo absolute">Eden.</div>
+        </div>
+
+        <div class="search">
+          <a href="">search</a>
+          <a href="">about</a>
+          <a href="">subscribe</a>
+        </div>
+      </div>
+      <!-- ////////////////////////////////navbar/////////////////////////////////// -->
+      <div class="navbar">
+        <div class="navItem"><a href="">Home</a></div>
+        <div class="navItem"><a href="">catogory</a></div>
+        <div class="navItem"><a href="">Archive</a></div>
+        <div class="navItem"><a href="">Blog</a></div>
+        <div class="navItem"><a href="">Latest News</a></div>
+        <div class="navItem"><a href="">Contact US</a></div>
+      </div>
+    </div>
+    <!-- ////////////////////////////////metroHeader/////////////////////////////////// -->
+
+    <div class="section flex" id="metroHeader">
+      <div class="metro-tile1">
+        <div class="relative">
+          <img src="./magazine/1.jpg" alt="1" />
+
+          <div class="white-back-box absolute tile flex center-box-ver">
+            <div class="tile-text-contents">
+              <a href="" class="category">TOURS & TRAVEL</a>
+              <br />
+              <a href="">
+                Created Face Stars Sixth Forth Fow Earth Firmament Meat</a
+              >
+              <br />
+              <a href="">MARCH 12 , 2019</a><a href="">BY ALEN MARK</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="metro-tile2 tile transparent-tile">
+        <div class="relative">
+          <img src="./magazine/2.jpg" alt="2" />
+          <div class="transparent-back-box absolute flex center-box-ver">
+            <div class="tile-text-contents">
+              <a href="" class="category">TOURS & TRAVEL</a>
+              <a href=""
+                >Created Face Stars Sixth Forth Fow Earth Firmament Meat</a
+              >
+
+              <a href="">MARCH 12 , 2019</a><a href="">BY ALEN MARK</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="metro-tile3 flex tile">
+        <div class="relative">
+          <img src="./magazine/3.jpg" alt="3" />
+
+          <div class="white-back-box absolute">
+            <div class="contents flex center-box-ver">
+              <div class="tile-text-contents">
+                <a href="" class="category">LIFESTYLE</a>
+                <a href=""
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                  culpa.</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="./magazine/4.jpg" alt="4" />
+          <div class="white-back-box absolute">
+            <div class="contents flex center-box-ver">
+              <div class="tile-text-contents">
+                <a href="" class="category">LIFESTYLE</a>
+                <a href=""
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                  culpa.</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    tileGenerator: 
+        div.tile>div.white-back-box absolute>a.category{Tours & Travel}+a.title{Brought all day domi nion appear from subdue dominion firmament over face}+a.date{March 12 , 2019 .}+a.author{By Alen Mark}
+     white-tile GEN: 
+        div.white-tile.tile>a.category{Tours}+a.title{Brought all day domi nion appear from subdue dominion firmament over face}
+    -->
+    <!-- ////////////////////////////////passage/////////////////////////////////// -->
+    <div class="section container flex" id="passage">
+      <div class="tile passage-tile1 flex">
+        <img src="./magazine/5.jpg" alt="5" />
+        <div class="white-back-box flex center-box-ver">
+          <div class="tile-text-contents">
+            <a href="" class="category">Tours & Travel</a>
+            <a href=""
+              >Brought all day domi nion appear from subdue dominion firmament
+              over face
+            </a>
+            <a href="" class="date">March 12 , 2019 . </a
+            ><a href="" class="author">By Alen Mark</a>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="./magazine/6.jpg" alt="6" />
+        <!-- <div class="tile passage-tile2"> -->
+        <div class="transparent-back-box absolute flex center-box-ver">
+          <div class="tile-text-contents">
+            <a href="">TOURS & TRAVEL</a>
+            <a href="">Abundantly Forth Late Appear Fourth Us.</a>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <div class="relative">
+        <img src="./magazine/7.jpg" alt="7" />
+        <!-- <div class="tile passage-tile2"> -->
+        <div class="transparent-back-box absolute flex center-box-ver">
+          <div class="tile-text-contents">
+            <a href="">TOURS & TRAVEL</a>
+            <a href="">Abundantly Forth Late Appear Fourth Us.</a>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+      <!-- <div class="tile passage-tile3">
+        <img src="./magazine/7.jpg" alt="7" />
+        <div class="transparent-back-box absolute flex center-box-ver">
+          <div class="tile-text-contents">
+            <a href="">TOURS & TRAVEL</a>
+            <a href="">Lorem ipsum dolor sit amet. Fourth Us.</a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>

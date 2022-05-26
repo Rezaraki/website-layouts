@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  border: 3px solid grey;
+  padding: 10px;
+  /* border-radius: 10px; */
+}
+
+.container {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgb(153, 174, 245);
+}
+.header {
+  justify-content: space-between;
+}
+.header > div {
+  /* min-height: 50px; */
+
+  background-color: rgb(15, 255, 255);
+}
+.socials > a > img {
+  width: 25px;
+}
+.socials > a {
+  margin-left: 1em;
+}
+.logo {
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+.navItem:hover {
+  color: hotpink;
+}
+#metroHeader {
+  display: flex;
+  justify-content: space-around;
+}
+.metro-tile1 {
+  flex-grow: 10;
+}
+
+.metro-tile2 {
+  flex-grow: 8;
+}
+.metro-tile3 {
+  flex-grow: 6;
+}
+.white-back-box {
+  background-color: white;
+  /* position:relative */
+}
+.category {
+  font-size: small;
+  color: brown;
+}
+.metro-tile2 > .category {
+  color: rgb(0, 0, 0);
+}
+#passage {
+  background-color: cadetblue;
+}
+.sec-head {
+  text-align: center;
+}
+.sec-head > h2 {
+  display: inline;
+  border-bottom: 3px solid crimson;
+}
+.flex {
+  display: flex;
+}
+#fashion-news2 .tile.flex {
+  background-color: rgb(236, 190, 236);
+  flex-wrap: wrap;
+}
+#rail {
+  padding: 0;
+}
+#rail > div {
+  min-width: 20%;
+}
+#about > div {
+  width: 25%;
+}
+#about {
+  justify-content: space-around;
+}
+#footer {
+  border-top: 1px solid grey;
+  justify-content: space-between;
+}

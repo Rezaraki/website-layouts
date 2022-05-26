@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  border: 2px solid grey;
+  padding: 10px;
+  /* border-radius: 10px; */
+}
+:root {
+  --hover-color-filter: invert(63%) sepia(69%) saturate(2514%)
+    hue-rotate(312deg) brightness(110%) contrast(101%);
+}
+a {
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.header.grid {
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 1;
+}
+.container {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgb(153, 174, 245);
+}
+.header {
+  justify-content: space-between;
+  position: relative;
+  height: 5vw;
+
+  /* align-items: center; */
+}
+.header > div {
+  display: flex;
+  align-items: center;
+  justify-items: space-around;
+  background-color: rgb(15, 255, 255);
+}
+.socials {
+  justify-items: start;
+  padding-left: 0;
+  /* float: left; */
+}
+.socials > a {
+  margin: 0 0.4em;
+}
+.socials > a > img {
+  width: 20px;
+}
+/* .asdasd {
+  filter: opacity(50%);
+} */
+.socials > a > img:hover {
+  filter: invert(63%) sepia(69%) saturate(2514%) hue-rotate(312deg)
+    brightness(110%) contrast(101%);
+}
+.search > a {
+  margin: 0 0.4em;
+}
+.search > a:hover {
+  filter: var(--hover-color-filter);
+}
+
+.logo-container {
+  flex-grow: 1;
+}
+.logo {
+  position: absolute;
+  left: 50%;
+}
+/* ///////////////navbar//////////// */
+.navbar {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid grey;
+}
+.navItem:hover {
+  filter: var(--hover-color-filter);
+}
+/* ////////////metro////////// */
+
+#metroHeader {
+  /* display: flex; */
+  justify-content: space-around;
+  align-content: stretch;
+}
+.relative {
+  position: relative;
+}
+.tile img {
+  height: 100%;
+}
+.relative > img {
+  /*  */
+  width: 100%;
+  object-fit: fill;
+}
+
+.white-back-box {
+  text-align: center;
+  /* background-color: white; */
+  position: absolute;
+}
+/* ////////////////metro-tile1///////////////////////////////////// */
+.metro-tile1 {
+  flex-grow: 12;
+  flex-basis: 0;
+  /* flex-shrink: 0; */
+}
+
+.center-box-ver {
+  flex-direction: column;
+  justify-content: center;
+}
+.metro-tile1 .white-back-box {
+  bottom: 0px;
+  right: 0px;
+  width: 80%;
+  height: 40%;
+}
+/* //////////////////metro-tile2 */
+.metro-tile2 .relative {
+  height: 100%;
+}
+.metro-tile2 img {
+  height: 100%;
+}
+.metro-tile2 {
+  flex-grow: 8;
+  flex-basis: 0;
+}
+/* 
+.metro-tile2 .absolute {
+  height: 100%;
+} */
+.transparent-back-box {
+  text-align: center;
+  position: absolute;
+}
+.metro-tile2 .transparent-back-box {
+  bottom: 0px;
+  right: 0px;
+  height: 100%;
+}
+.center-box-ver {
+  flex-direction: column;
+  justify-content: center;
+}
+/* ///////////////white-tile3////////////////////////////////////// */
+.metro-tile3 {
+  flex-wrap: wrap;
+  flex-grow: 6;
+  flex-basis: 0;
+  /* flex-shrink: 0; */
+}
+
+.metro-tile3 .white-back-box {
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 60%;
+}
+.metro-tile3 .contents {
+  margin: 0 10%;
+  background-color: hotpink;
+  height: 100%;
+}
+/* ///////////metro tile texts */
+.category {
+  font-size: small;
+  color: brown;
+}
+.transparent-back-box .category {
+  color: rgb(255, 255, 255);
+}
+
+/* //////////////////pasage//////////////////////////////////////// */
+#passage {
+  background-color: cadetblue;
+}
+.sec-head {
+  text-align: center;
+}
+.sec-head > h2 {
+  display: inline;
+  border-bottom: 3px solid crimson;
+}
+
+#fashion-news2 .tile.flex {
+  background-color: rgb(236, 190, 236);
+  flex-wrap: wrap;
+}
+#rail {
+  padding: 0;
+}
+#rail > div {
+  min-width: 20%;
+}
+#about > div {
+  width: 25%;
+}
+#about {
+  justify-content: space-around;
+}
+#footer {
+  border-top: 1px solid grey;
+  justify-content: space-between;
+}
